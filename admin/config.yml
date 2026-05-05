@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: tarasolyak/tarasolyak.github.io
+  repo: tarasolyak.github.io
   branch: main
   base_url: https://sveltiacms.app
   auth_endpoint: oauth
