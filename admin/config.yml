@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: tarasolyak/tarasolyak.github.io
+  branch: main
+  base_url: https://sveltiacms.app
+  auth_endpoint: oauth
+  app_id: Ov23ctRXv9JVCILhQqLX
+
+media_folder: images/uploads
+
+collections:
+  - name: "projects"
+    label: "Проєкти"
+    folder: "_data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Назва", name: "title", widget: "string" }
+      - { label: "Опис", name: "description", widget: "text" }
+      - { label: "GitHub посилання", name: "github_url", widget: "string" }
+      - { label: "Превью", name: "image", widget: "image", required: false }
