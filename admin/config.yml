@@ -17,7 +17,13 @@ collections:
             label: "Проєкти"
             widget: "list"
             fields:
+              - { label: "Slug (латиницею, без пробілів)", name: "slug", widget: "string" }
               - { label: "Назва", name: "title", widget: "string" }
-              - { label: "Опис", name: "description", widget: "text" }
-              - { label: "GitHub посилання", name: "github_url", widget: "string" }
-              - { label: "Превью", name: "image", widget: "image", required: false }
+              - { label: "Короткий опис", name: "description", widget: "text" }
+              - { label: "Превью зображення", name: "image", widget: "image", required: false }
+              - { label: "GitHub посилання", name: "github_url", widget: "string", required: false }
+              - { label: "Live demo посилання", name: "demo_url", widget: "string", required: false }
+              - { label: "Категорія", name: "category", widget: "select", options: ["web", "brand", "design"], default: "web" }
+              - { label: "Технології", name: "technologies", widget: "list", required: false }
+              - { label: "Детальний опис", name: "body", widget: "markdown", required: false }
+              - { label: "Галерея", name: "gallery", widget: "list", field: { label: "Зображення", name: "image", widget: "image" }, required: false }
