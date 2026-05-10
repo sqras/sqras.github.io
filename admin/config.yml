@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sqras/sqras.github.io.git
+  repo: sqras/sqras.github.io
   branch: main
 
 media_folder: images/uploads
