@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: tarasolyak/tarasolyak.github.io
+  repo: sqras/sqras.github.io.git
   branch: main
 
 media_folder: images/uploads
